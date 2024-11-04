@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISU</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif; /* Tipografía elegante y legible */
+            background-color: #245953; /* Fondo verde marino */
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Banner */
+        #banner {
+            width: 100%;
+            padding: 20px;
+            background-color: #1b4744; /* Verde marino oscuro */
+            text-align: center;
+            color: #d4af37; /* Dorado */
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Botones */
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            color: #FFFFFF;
+            background-color: #1b4744;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #133333;
+        }
+
+        /* Contenido */
+        .content {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        /* Sección de Proyectos con 16 marcos */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .project-item {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #FFFFFF;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Adapta la imagen al tamaño del marco sin deformarse */
+            border-radius: 10px; /* Bordes redondeados en la imagen también */
+            display: block;
+        }
+
+        /* Textos en Consultas */
+        .consultas-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        /* Adaptación para Móviles */
+        @media (max-width: 600px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 4 para pantallas pequeñas */
+            }
+            #banner {
+                font-size: 1.5em;
+            }
+            .button {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <div id="banner">SISU</div>
+
+    <!-- Botones de Navegación -->
+    <button class="button" onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button class="button" onclick="mostrarSeccion('proyectos')">Proyectos</button>
+    <button class="button" onclick="mostrarSeccion('contacto')">Contacto</button>
+
+    <!-- Secciones de Contenido -->
+    <div id="inicio" class="content">
+        <h2>Objetivos</h2>
+        <p>Puedes escribir aquí los objetivos o cualquier otra información que desees mostrar en esta sección.</p>
+        <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cdn.leonardo.ai/users/3c2b0792-2669-4df9-801e-7b90c4c830ef/generations/7490b688-f9f9-40f3-ae0f-4620be6edeb0/Leonardo_Phoenix_Exquisite_highfashion_photography_depicting_a_2.jpg" width="490" height="490">
+    </div>
+
+    <div id="proyectos" class="content">
+        <h2>Trabajos</h2>
+        <div class="project-grid">
+            <!-- Generamos 16 marcos para las imágenes -->
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image.png" alt="Imagen 1"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy.png" alt="Imagen 2"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 2.png" alt="Imagen 3"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 3.png" alt="Imagen 4"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 4.png" alt="Imagen 5"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 5.png" alt="Imagen 6"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 6.png" alt="Imagen 7"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 7.png" alt="Imagen 8"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 8.png" alt="Imagen 9"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 9.png" alt="Imagen 10"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\Imagen de WhatsApp 2024-11-04 a las 20.29.06_493a3484.jpg" alt="Imagen 11"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 12.png" alt="Imagen 12"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\image copy 11.png" alt="Imagen 13"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\Imagen de WhatsApp 2024-11-04 a las 20.29.07_68dee804.jpg" alt="Imagen 12"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\Imagen de WhatsApp 2024-11-04 a las 20.29.07_c3d4c5bb.jpg" alt="Imagen 13"></div>    
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\Imagen de WhatsApp 2024-11-04 a las 20.29.08_a8035d71.jpg" alt="Imagen 12"></div>
+            <div class="project-item"><img src="E:\Desktop\Mi sitio web\Sisu\trabajos\Imagen de WhatsApp 2024-11-04 a las 20.29.09_aac38f4c.jpg" alt="Imagen 13"></div>        
+        </div>
+    </div>
+
+    <div id="contacto" class="content">
+        <h2>Consultas</h2>
+        <p class="consultas-text">Para más información, contáctanos a través de nuestros canales oficiales.</p>
+        <p class="consultas-text">Teléfono: +123 456 789</p>
+        <p class="consultas-text">Correo Electrónico: contacto@sisu.com</p>
+    </div>
+
+    <!-- JavaScript para Navegación -->
+    <script>
+        function mostrarSeccion(seccion) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.content').forEach((content) => {
+                content.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccion).style.display = 'block';
+
+            // Actualizar los botones de navegación
+            document.querySelectorAll('.button').forEach((button) => {
+                button.style.display = 'inline-block';
+            });
+
+            // Ocultar el botón de la sección activa
+            document.querySelector(`.button[onclick="mostrarSeccion('${seccion}')"]`).style.display = 'none';
+        }
+
+        // Mostrar la sección "Inicio" por defecto al cargar la página
+        mostrarSeccion('inicio');
+    </script>
+</body>
+</html>
